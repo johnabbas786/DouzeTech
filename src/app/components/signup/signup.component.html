@@ -1,0 +1,25 @@
+<!-- login.component.html -->
+<div class="main-container">
+  <h2>𝕷𝖔𝖌𝖎𝖓</h2>
+
+  <form  [formGroup]="loginForm">
+    <div class="container">
+      <img
+        class="avatar"
+        src="https://douzebook-production.web.app/assets/imgs/douzetech-logo-new.svg"
+        alt="Avatar"
+      />
+    </div>
+
+    <div class="container">
+      <label for="uname"><h3>Email</h3></label>
+      <input type="text" placeholder="Enter Username" name="uname" formControlName="email" />
+
+      <label for="psw"><h3>Password</h3></label>
+      <input type="password" placeholder="Enter Password" name="psw"  formControlName="password" />
+
+      <button type="submit">Login</button>
+      <button type="button" routerLink="/login">Back</button>
+    </div>
+  </form>
+</div>
